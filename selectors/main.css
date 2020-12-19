@@ -1,0 +1,64 @@
+body div.red {
+    background: purple !important;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    background: green;
+    margin: 10px;
+}
+
+body div.red {
+    background: red !important;
+}
+
+
+
+
+
+
+
+
+input {
+    outline: none;
+}
+
+input:active {
+    border: 3px solid red;
+}
+
+.input[name="pass"]:first-child:hover {
+    border: 3px solid purple;
+}
+input:focus {
+    border: 3px solid yellow;
+}
+
+.block {
+    padding: 50px;
+    width: 500px;
+    height: 500px;
+    background: yellow;
+}
+
+.block:hover .input[name="pass"]:first-child {
+    background: green;
+}
+
+/*.block a:last-child {*/
+/*    color: green;*/
+/*    font-size: 40px;*/
+/*}*/
+
+/*ul li:first-child {*/
+/*    color: red;*/
+/*}*/
+
+ul li:nth-child(3n) {
+    color: red;
+}
+
+/*ul li:last-child {*/
+/*    color: red;*/
+/*}*/

@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+}
+
+ul, li, p, h1, h2, body {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.clearfix::after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+.float-left {
+    float: left;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 0 30px;
+}
+
+.main-section {
+    padding: 130px 0 90px;
+    background: #f0f2f5;
+}
+
+.block {
+    display: inline-block;
+    width: 50%;
+}
+
+header {
+    padding: 20px 0;
+}
+
+footer {
+    padding: 30px 0 50px;
+}
+
+header .title {
+    font-size: 30px;
+}
+
+.logo {
+    max-width: 200px;
+    margin-left: -20px;
+}
+
+.sub-title {
+    font-size: 24px;
+    line-height: 28px;
+    color: #1c1e21;
+}
+
+.description {
+    margin-bottom: 12px;
+    font-size: 15px;
+    line-height: 24px;
+    color: #606770;
+}
+
+.accounts-list .account-item {
+    max-width: 160px;
+    padding: 0 10px;
+}
+
+.accounts-list .account-item:first-child {
+    padding-left: 0;
+}
+
+.accounts-list .account-item:last-child {
+    padding-right: 0;
+}
+
+.accounts-list .account-item .link {
+    position: relative;
+    display: block;
+    border-radius: 8px;
+    box-shadow: 0 0 0 1px #dddfe2;
+    text-decoration: none;
+    background: #fff;
+    transition: box-shadow 0.2s ease;
+}
+
+.accounts-list .account-item .link:hover {
+    box-shadow: 0 1px 8px 5px #dddfe2;
+}
+
+.accounts-list .account-item .link:hover .close-icon {
+    top: -10px;
+    left: -10px;
+    width: 30px;
+    height: 30px;
+    font-size: 16px;
+    line-height: 30px;
+    background: white;
+    color: darkgray;
+}
+
+.accounts-list .account-item .link .profile-image {
+    max-width: 100%;
+    border-top-right-radius: 8px;
+    border-top-left-radius: 8px;
+}
+
+.accounts-list .account-item .link .close-icon {
+    position: absolute;
+    top: 5px;
+    left: 5px;
+    display: block;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 12px;
+    line-height: 20px;
+    background: #1c1e21;
+    color: #fff;
+    transition: all 0.2s ease;
+}
+
+.accounts-list .account-item .link .name {
+    padding: 12px;
+    font-size: 18px;
+    color: #4b4f56;
+    text-align: center;
+}
+
+.languages-list .language-item {
+    margin-right: 20px;
+    cursor: pointer;
+    color: #8a8d91;
+    transition: all 0.2s ease;
+}
+
+.languages-list .language-item:hover {
+    text-decoration: underline;
+}
