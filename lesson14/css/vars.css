@@ -1,0 +1,9 @@
+:root {
+    /* animation */
+    --animate-duration: 12s;
+    --animate-delay: 1s;
+    --animate-repeat: 1;
+
+    /* colors */
+    --primary-bg: #187bff;
+}

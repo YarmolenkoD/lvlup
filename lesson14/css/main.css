@@ -1,0 +1,44 @@
+@import "./vars.css";
+@import "./normalize.css";
+@import "animations/main.css";
+@import "./mario.css";
+@import "./loading.css";
+
+body {
+    background: var(--primary-bg);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    --color: yellow;
+}
+
+.container.dark-mode {
+    --color: black;
+}
+
+
+.box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 200px;
+    height: 200px;
+    background: var(--color);
+}
+
+.inner-box-container {
+    /*--color: green;*/
+}
+
+.inner-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background: var(--color);
+    /*background: var(--color, yellow);*/
+    /*background: var(--color, var(--my-background, pink));*/
+}

@@ -1,0 +1,29 @@
+.loading {
+    /*position: relative;*/
+}
+
+.loading span {
+    /*position: relative;*/
+    display: inline-block;
+    font-size: 40px;
+    color: #fff;
+    text-transform: uppercase;
+    animation: loading 1s;
+    /*animation: loading 1s infinite; */
+    animation-delay: calc(0.1s * var(--i));
+    opacity: 0;
+}
+
+@keyframes loading {
+    0%,40%,80% {
+        opacity: 1;
+        transform: translateY(0)
+    }
+    20% {
+        transform: translateY(-20px)
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
