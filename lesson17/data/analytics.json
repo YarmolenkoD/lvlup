@@ -1,0 +1,61 @@
+{
+  "users": [
+    {
+      "firstName": "John",
+      "lastName": "White",
+      "age": 20,
+      "ratings": [
+        {
+          "month": "March",
+          "rating": 2
+        },
+        {
+          "month": "April",
+          "rating": 2
+        },
+        {
+          "month": "May",
+          "rating": 5
+        }
+      ]
+    },
+    {
+      "firstName": "Will",
+      "lastName": "Smith",
+      "age": 21,
+      "ratings": [
+        {
+          "month": "March",
+          "rating": 3
+        },
+        {
+          "month": "April",
+          "rating": 3
+        },
+        {
+          "month": "May",
+          "rating": 3
+        }
+      ]
+    },
+    {
+      "firstName": "Kyle",
+      "lastName": "Black",
+      "age": 19,
+      "ratings": [
+        {
+          "month": "March",
+          "rating": 5
+        },
+        {
+          "month": "April",
+          "rating": 5
+        },
+        {
+          "month": "May",
+          "rating": 5
+        }
+      ]
+    }
+  ]
+}

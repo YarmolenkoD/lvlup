@@ -1,0 +1,135 @@
+.button {
+    display: inline-block;
+    padding: .75rem 1.25rem;
+    border-radius: 10rem;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1rem;
+    letter-spacing: .15rem;
+    transition: all .3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    cursor: pointer;
+    outline: none;
+    border: none;
+}
+
+.button.big {
+    font-size: 2rem;
+}
+
+.button:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10rem;
+    z-index: -2;
+}
+
+.button.primary:after {
+    background-color: var(--primary-color);
+}
+
+.button.secondary:after {
+    background-color: var(--secondary-color);
+}
+
+.button:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    transition: all .3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+
+.button.primary:before {
+    background-color: var(--dark-primary-color);
+}
+
+.button.secondary:before {
+    background-color: var(--dark-secondary-color);
+}
+
+.button:hover {
+    color: #fff;
+}
+
+.button:hover:before {
+    width: 100%;
+}
+
+
+.glowing-button {
+    padding: .75em 1.25em;
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #111;
+    cursor: pointer;
+    position: relative;
+    z-index: 0;
+    border-radius: 1rem;
+    font-size: 1rem;
+    /*overflow: hidden;*/
+}
+
+.glowing-button:before {
+    content: '';
+    background: linear-gradient(45deg, #ff0000, #ff7300, #fffb00, #48ff00, #00ffd5, #002bff, #7a00ff, #ff00c8, #ff0000);
+    position: absolute;
+    top: -2px;
+    left: -2px;
+    background-size: 400%;
+    z-index: -1;
+    filter: blur(5px);
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    animation: glowing 20s linear infinite;
+    opacity: 0;
+    transition: opacity .3s ease-in-out;
+    border-radius: 10px;
+}
+
+.glowing-button:active {
+    color: #000;
+}
+
+.glowing-button:active:after {
+    background: transparent;
+}
+
+.glowing-button:hover:before {
+    opacity: 1;
+}
+
+.glowing-button:after {
+    z-index: -1;
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: black;
+    left: 0;
+    top: 0;
+    border-radius: 10px;
+}
+
+@keyframes glowing {
+    0% {
+        background-position: 0 0;
+    }
+    50% {
+        background-position: 400% 0;
+    }
+    100% {
+        background-position: 0 0;
+    }
+}
